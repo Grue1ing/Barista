@@ -26,6 +26,7 @@ android {
 }
 
 dependencies {
+  implementation fileTree(dir: 'libs', include: ['*.aar'])
   implementation "com.android.support:support-v4:$supportLibVersion"
   implementation "com.android.support:appcompat-v7:$supportLibVersion"
   implementation "com.android.support:recyclerview-v7:$supportLibVersion"
@@ -35,7 +36,7 @@ dependencies {
 
   androidTestImplementation "com.android.support.test.espresso:espresso-core:$espressoVersion"
   androidTestImplementation "com.android.support.test.espresso:espresso-contrib:$espressoVersion"
-  androidTestImplementation "com.android.support.test.uiautomator:uiautomator-v18:$uiAutomatorVersion"
+  androidTestImplementation "androidx.test.uiautomator:uiautomator:2.2.0"
   androidTestImplementation "com.android.support.test.espresso:espresso-intents:$espressoVersion"
   androidTestImplementation "org.assertj:assertj-core:2.9.1"
   androidTestImplementation "com.nhaarman:mockito-kotlin:1.5.0"
@@ -46,6 +47,4 @@ dependencies {
   implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
   testImplementation 'junit:junit:4.12'
-
-  androidTestImplementation project(':library')
 }
