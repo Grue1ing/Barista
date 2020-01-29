@@ -20,7 +20,7 @@ android {
 dependencies {
   api "com.android.support.test.espresso:espresso-core:$espressoVersion"
   api "com.android.support.test.espresso:espresso-contrib:$espressoVersion"
-  api "com.android.support.test.uiautomator:uiautomator-v18:$uiAutomatorVersion"
+  api "androidx.test.uiautomator:uiautomator:2.2.0"
   api "com.android.support.test.espresso:espresso-intents:$espressoVersion"
 
   implementation "com.android.support:support-annotations:$supportLibVersion"
